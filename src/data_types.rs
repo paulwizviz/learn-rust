@@ -1,4 +1,11 @@
 pub fn integers(){
+
+    let int: usize = 32;
+    println!("unsigned architecture dependent int {}", int);
+
+    let int: isize = -32;
+    println!("signed architecture dependent int {}", int);
+
     let unsigned_int: u8 = 1;
     println!("unsigned 8-bit {}", unsigned_int);
 
