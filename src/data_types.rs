@@ -76,4 +76,12 @@ pub fn array(){
     let repeated_elements = [3; 2]; // duplicate 2 elements of 3
     println!("First element of repeated_elements is {}", repeated_elements[0]);
     println!("Second element of repeated_elements is {}", repeated_elements[1]);
+
+    let mut mutate_array = [3; 3];
+    println!("Before mutation: first element of mutateArray is {}", mutate_array[0] );
+    println!("Before mutation: second element of mutateArray is {}", mutate_array[1] );   
+    mutate_array[0] = 1;
+    println!("After mutation: first element of mutateArray is {}", mutate_array[0] );
+    println!("After mutation: second element of mutateArray is {}", mutate_array[1] );
+
 }
