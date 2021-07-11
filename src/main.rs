@@ -10,4 +10,5 @@ fn main() {
     data_types::tuples();
     println!("=====");
     data_types::array();
+    data_types::slices()
 }

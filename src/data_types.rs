@@ -85,3 +85,13 @@ pub fn array(){
     println!("After mutation: second element of mutateArray is {}", mutate_array[1] );
 
 }
+
+pub fn slices(){
+
+    let array = [1,2,3,4];
+    let slice = &array[1..2];
+
+    println!("slice {}", slice.len());
+    println!("slice first element {}", slice[0]);
+
+}
