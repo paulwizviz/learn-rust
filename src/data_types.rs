@@ -61,37 +61,3 @@ pub fn tuples(){
     println!("-------");
     println!("let tup: (i32, f64, u8) = (100, 1.2, 1)  tup.0 {}", tup.0)
 }
-
-pub fn array(){
-    let a = [1, 2, 3];
-    println!("First element of a is {}", a[0]);
-    println!("Length of array is {}", a.len());
-
-    let b:[i32; 3] = [0,1,3]; // fix array of i32 type with a size of 3 elements
-    println!("First element of b is {}", b[0]);
-
-    let byte_array = [b'A',b'c'];
-    println!("First element of byte_array is {}", byte_array[0]) ;
-
-    let repeated_elements = [3; 2]; // duplicate 2 elements of 3
-    println!("First element of repeated_elements is {}", repeated_elements[0]);
-    println!("Second element of repeated_elements is {}", repeated_elements[1]);
-
-    let mut mutate_array = [3; 3];
-    println!("Before mutation: first element of mutateArray is {}", mutate_array[0] );
-    println!("Before mutation: second element of mutateArray is {}", mutate_array[1] );   
-    mutate_array[0] = 1;
-    println!("After mutation: first element of mutateArray is {}", mutate_array[0] );
-    println!("After mutation: second element of mutateArray is {}", mutate_array[1] );
-
-}
-
-pub fn slices(){
-
-    let array = [1,2,3,4];
-    let slice = &array[1..2];
-
-    println!("slice {}", slice.len());
-    println!("slice first element {}", slice[0]);
-
-}

@@ -1,6 +1,12 @@
 mod data_types;
+mod aggregates;
+mod primitives;
 
 fn main() {
+    primitives::variables();
+    println!("=====");
+    primitives::pointers();
+    println!("=====");
     data_types::integers();
     println!("=====");
     data_types::floats();
@@ -9,6 +15,6 @@ fn main() {
     println!("=====");
     data_types::tuples();
     println!("=====");
-    data_types::array();
-    data_types::slices()
+    aggregates::array();
+    aggregates::slice();
 }
