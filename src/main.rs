@@ -1,6 +1,7 @@
 mod data_types;
 mod aggregates;
 mod primitives;
+mod formatted_print;
 
 fn main() {
     primitives::variables();
@@ -17,4 +18,7 @@ fn main() {
     println!("=====");
     aggregates::array();
     aggregates::slice();
+    println!("======");
+    formatted_print::string_fmt();
+    formatted_print::print_traits();
 }
