@@ -15,10 +15,14 @@ fn main() {
     data_types::characters();
     println!("=====");
     data_types::tuples();
+    println!("======");
+    data_types::raw_string();
+    data_types::string_obj();
     println!("=====");
     aggregates::array();
     aggregates::slice();
     println!("======");
     formatted_print::string_fmt();
+    println!("======");
     formatted_print::print_traits();
 }
