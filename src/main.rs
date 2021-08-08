@@ -4,6 +4,7 @@ mod primitives;
 mod formatted_print;
 mod strings;
 mod pointers;
+mod structs;
 
 fn main() {
     primitives::variables();
@@ -36,4 +37,6 @@ fn main() {
     pointers::primitive();
     println!("======");
     pointers::box_pointer();
+    println!("======");
+    structs::instantiate();
 }
