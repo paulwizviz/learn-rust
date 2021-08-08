@@ -1,7 +1,10 @@
 pub fn raw(){
-    let long_string = "This is a very long string,
+    let long_string = r"This is a very long string,
     that spans across multiple lines.";
     println!("Multiple line string {}", long_string);
+
+    let string_with_quote = r#"""#;
+    println!("String with quote {}", string_with_quote);
 
     println!("---Slice of raw string---");
 
@@ -21,6 +24,8 @@ pub fn string_obj(){
     let s1:&str = s.as_str();
     println!("Str type: {}", s1);
 
+    let rep = s.replace("a", "b");
+    println!("replaced {}", rep)
 }
 
 pub fn ownership(){

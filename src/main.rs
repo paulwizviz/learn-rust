@@ -22,6 +22,8 @@ fn main() {
     println!("=====");
     strings::raw();
     println!("=====");
+    strings::string_obj();
+    println!("=====");
     strings::ownership();
     println!("=====");
     aggregates::array();
