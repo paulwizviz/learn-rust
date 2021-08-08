@@ -2,6 +2,7 @@ mod data_types;
 mod aggregates;
 mod primitives;
 mod formatted_print;
+mod strings;
 
 fn main() {
     primitives::variables();
@@ -16,8 +17,11 @@ fn main() {
     println!("=====");
     data_types::tuples();
     println!("======");
-    data_types::raw_string();
-    data_types::string_obj();
+    data_types::ownership();
+    println!("=====");
+    strings::raw();
+    println!("=====");
+    strings::ownership();
     println!("=====");
     aggregates::array();
     aggregates::slice();
@@ -25,4 +29,6 @@ fn main() {
     formatted_print::string_fmt();
     println!("======");
     formatted_print::print_traits();
+    println!("======");
+ 
 }

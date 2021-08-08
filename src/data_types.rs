@@ -62,26 +62,8 @@ pub fn tuples(){
     println!("let tup: (i32, f64, u8) = (100, 1.2, 1)  tup.0 {}", tup.0)
 }
 
-pub fn raw_string(){
-    let long_string = "This is a very long string,
-    that spans across multiple lines.";
-    println!("Multiple line string {}", long_string);
-
-    println!("----------");
-
-    let string_slice = &long_string[2..4];
-    println!("Slice 2..4 of {:?}", string_slice);
-
-}
-
-pub fn string_obj(){
-    let mut s = String::new();
-    s.push('a');
-    s.push_str(" additional string");
-
-    println!("New string {}", s);
-
-    let s1:&str = s.as_str();
-    println!("Str type: {}", s1);
-
+pub fn ownership(){
+    let i = 1;
+    let i1 = i;
+    println!("i: {} i1: {}", i, i1);
 }
