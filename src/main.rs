@@ -3,6 +3,7 @@ mod aggregates;
 mod primitives;
 mod formatted_print;
 mod strings;
+mod pointers;
 
 fn main() {
     primitives::variables();
@@ -30,5 +31,7 @@ fn main() {
     println!("======");
     formatted_print::print_traits();
     println!("======");
- 
+    pointers::primitive();
+    println!("======");
+    pointers::box_pointer();
 }
