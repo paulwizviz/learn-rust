@@ -1,4 +1,4 @@
-pub fn integers(){
+pub fn run(){
 
     let int: usize = 32;
     println!("unsigned architecture dependent int {}", int);
@@ -35,35 +35,4 @@ pub fn integers(){
 
     let byte_type: u8 = b'A';
     println!("byte type {}", byte_type);
-}
-
-pub fn floats(){
-    let float_32: f32;
-    float_32 = 1.0;
-    println!("float32 {}", float_32)
-}
-
-pub fn characters(){
-    let c = 'z';
-    println!("Character {}", c);
-    let smile = '\u{1f600}';
-    println!("Character {}", smile);
-    let grin = '😊';
-    println!("Character {}", grin);
-}
-
-pub fn tuples(){
-    let tup: (i32, f64, u8) = (100, 1.2, 1);
-    let (x, y, z) = tup;
-    println!("Tuple (x,y,z) = (100, 1.2, 1) value of x is {}", x);
-    println!("Tuple (x,y,z) = (100, 1.2, 1) value of y is {}", y);
-    println!("Tuple (x,y,z) = (100, 1.2, 1) value of y is {}", z);
-    println!("-------");
-    println!("let tup: (i32, f64, u8) = (100, 1.2, 1)  tup.0 {}", tup.0)
-}
-
-pub fn ownership(){
-    let i = 1;
-    let i1 = i;
-    println!("i: {} i1: {}", i, i1);
 }

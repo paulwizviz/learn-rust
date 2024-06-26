@@ -3,5 +3,25 @@
 version = 3
 
 [[package]]
-name = "rust-basics"
+name = "aggregates"
+version = "0.1.0"
+
+[[package]]
+name = "data_types"
+version = "0.1.0"
+
+[[package]]
+name = "pointers"
+version = "0.1.0"
+
+[[package]]
+name = "print"
+version = "0.1.0"
+
+[[package]]
+name = "string"
+version = "0.1.0"
+
+[[package]]
+name = "struts"
 version = "0.1.0"
