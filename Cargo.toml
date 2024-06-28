@@ -2,6 +2,7 @@
 
 members = [ "aggregates",
     "data_types", 
+    "integers", 
     "pointers", 
     "print", 
     "string", 

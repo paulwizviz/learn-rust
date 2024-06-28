@@ -1,6 +1,12 @@
-mod formatted_print;
+fn string_fmt(){
+    let world= "world";
+    let mut str: String = format!("Hello {world}");
+    println!("{}",str);
+
+    str = format!("Hello {}", 1);
+    println!("{}",str);
+}
 
 fn main() {
-    formatted_print::string_fmt();
-    formatted_print::print_traits();
+    string_fmt()
 }
