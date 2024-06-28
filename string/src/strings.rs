@@ -1,6 +1,7 @@
 pub fn raw(){
+    // r prefix denotes raw string.
     let long_string = r"This is a very long string,
-    that spans across multiple lines.";
+that spans across multiple lines.";
     println!("Multiple line string {}", long_string);
 
     let string_with_quote = r#"""#;
@@ -13,7 +14,6 @@ pub fn raw(){
 
 }
 
-#[allow(dead_code)]
 pub fn string_obj(){
     let mut s = String::new();
     s.push('a');
