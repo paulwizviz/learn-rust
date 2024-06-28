@@ -98,6 +98,15 @@ fn one_two_eight_bit(){
     println!("Min unsigned one-two-eight bits integer: {min_one_two_eight}");
 }
 
+fn print_type_of<T>(_: &T) {
+    println!("Default: {}", std::any::type_name::<T>());
+}
+
+fn default_type(){
+    println!("-- default type --");
+    let v = 32; // It will default to i32 if no types defined.
+    print_type_of(&v);
+}
 
 fn main() {
    eight_bit();
@@ -105,4 +114,5 @@ fn main() {
    thirty_two_bit();
    sixty_four_bit();
    one_two_eight_bit();
+   default_type();
 }
