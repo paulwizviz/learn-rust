@@ -1,7 +1,7 @@
 [workspace]
 
 members = [ "aggregates",
-    "data_types", 
+    "data_types", "floats", 
     "integers", 
     "pointers", 
     "print", 
