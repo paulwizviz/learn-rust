@@ -23,15 +23,11 @@ name = "memory"
 version = "0.1.0"
 
 [[package]]
-name = "pointers"
-version = "0.1.0"
-
-[[package]]
 name = "print"
 version = "0.1.0"
 
 [[package]]
-name = "string"
+name = "strings"
 version = "0.1.0"
 
 [[package]]

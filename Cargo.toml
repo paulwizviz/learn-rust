@@ -3,10 +3,9 @@
 members = [ "aggregates",
     "floats", 
     "integers",
-    "memory", 
-    "pointers", 
+    "memory",  
     "print", 
-    "string", 
+    "strings", 
     "struts",
     "tuples",
 ]
