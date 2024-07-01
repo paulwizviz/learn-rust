@@ -5,6 +5,7 @@ A project to demonstrate basic elements of Rust.
 ## Topics
 
 * [Memory and variables](./memory/doc.md)
+* [Project management](#project-management)
 * [Strings](./string/doc.md)
 * Types
     * Floats
