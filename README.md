@@ -1,11 +1,13 @@
 # Overview
 
-A project to demonstrate basic elements of Rust.
+Welcome to my collection of working examples and references to documentation, social media, etc, on all matters related to the fundamentals of Rust programming languages.
 
 ## Topics
 
 * [Memory and variables](./memory/doc.md)
-* [Project management](#project-management)
+* Project management
+    * [Package management](./project/package.md)
+    * [Toolchain](./project/tools.md)
 * [Strings](./string/doc.md)
 * Types
     * Floats
