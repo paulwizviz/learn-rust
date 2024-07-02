@@ -1,6 +1,7 @@
 [workspace]
 
-members = [ "aggregates",
+members = [ 
+    "aggregates",
     "floats", 
     "integers",
     "memory",  
