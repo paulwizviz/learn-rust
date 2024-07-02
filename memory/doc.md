@@ -2,7 +2,7 @@
 
 This section gives an overview of the way Rust manages memory and variables.
 
-## Constants `const`
+## `const`
 
 The key characteristics of `const` are:
 
@@ -76,9 +76,18 @@ error[E0384]: cannot assign twice to immutable variable `x`
 ```
 
 
-## Ownership
+## Ownership and Borrowing
 
-Ownership is a set of rules that govern how a Rust program manages memory. Compliance to rules is done at compile time. If any of the rules are violated, the program won’t compile.
+Rust is similar to C and C++ that requires you to think about memory when you code. In particular, there are two types of memories you need to have in mind when you code: stack and heap. Unless you explicity create allocate a memory in heap, data is stored in the stack.
+
+Ownership is a set of rules that govern how a variable owns data value. Compliance to rules is done at compile time. If any of the rules are violated, the program won’t compile.
+
+A simple way of thinking about ownership is as follows:
+```rust
+let i = 1; // i owns the value 1, which is stored in stack memory
+let s = "Hello"; // s owns the value "Hello", which is stored in stack
+let st = String::from("hello"); // st owns the value "Hello",  which is stored in heap.
+```
 
 The rules are:
 
@@ -86,18 +95,43 @@ The rules are:
 * There can only be one owner at a time.
 * When the owner goes out of scope, the value will be dropped.
 
+Here is an example demonstrating violation of the ownership rules
+
 ```rust
-let s1 = String::from("hello");
+let s1 = String::from("hello"); // "hello" is created in heap
 let s2 = s1;
 
 println!("{s1}, world!");
 ```
+This will result in the compiled error. The compiler has detected that `s1` is no longer valid as ownership has moved to `s2`.
 
-This will result in the compiled error. `s1` is no longer valid as ownership has been moved.
+The solution for `String` object to avoid ownership violation are as follows:
+```rust
+let x = String::from("hello");
+let y = &x; // y "borrows" x by having y store the address of x
+```
+Alternatively, we could clone the value of `x` and let `y` own the value reference by `x`.
+```rust
+let x = String::from("hello");
+let y = x.clone();
+```
 
-`s1` is a reference to value `"hello"`, which is stored in heap.
-The assignment to `s2` transfer ownership from `s1`. 
+However, when it comes of ownership of stack based data, it **not** result in compiler error, for example:
+```rust
+let x = 1;
+let y = x;
+```
+In this case, a new value of `x` (in stack data) is created and the new value is now owned by `y`. It is cheaper to create new memory in stack than heap.
 
-Please refer to the following for specific type ownerships:
+The following are rules that automatically clone are as follows:
+* All the integer types, such as u32.
+* The Boolean type, bool, with values true and false.
+* All the floating-point types, such as f64.
+* The character type, char.
+* Tuples, if they only contain types that also implement Copy. For example, (i32, i32) implements Copy, but (i32, String) does not.
 
-* [String](../strings/doc.md)
+For detailed explanation, please refer to [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
+
+## References
+
+* [Visualizing memory layout of Rust's data types [See description/first comment]](https://www.youtube.com/watch?v=rDoqT-a6UFg)
