@@ -4,16 +4,16 @@ Welcome to my collection of working examples and references to documentation, so
 
 ## Topics
 
+* Basic Types
+    * [Floats](./floats/doc.md)
+    * [Integers](./integers/doc.md)
+    * Boolean - `bool` (`true` or `false`)
 * [Memory and variables](./memory/doc.md)
 * Project management
     * [Package management](./project/package.md)
     * [Toolchain](./project/tools.md)
 * [Strings](./string/doc.md)
 * Struts
-* Types
-    * Floats
-    * Integers
-    * Aggregates
 
 ## References
 
