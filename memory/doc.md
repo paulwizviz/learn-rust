@@ -136,3 +136,4 @@ For detailed explanation, please refer to [What Is Ownership?](https://doc.rust-
 
 * [Visualizing memory layout of Rust's data types [See description/first comment]](https://www.youtube.com/watch?v=rDoqT-a6UFg)
 * [The Rust Borrow Checker - A Deep Dive - Nell Shamrell-Harrington, Microsoft](https://www.youtube.com/watch?v=HG1fppexRMA)
+* [Rust and RAII Memory Management - Computerphile](https://www.youtube.com/watch?v=pTMvh6VzDls)
