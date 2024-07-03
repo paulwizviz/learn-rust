@@ -30,7 +30,9 @@ that spans across multiple lines.";
 
 pub fn ownership(){
     println!("-- Literal string ownership --");
-    let s1 = "This is a raw string";
-    let s1_1 = s1;
-    println!("Ownership of raw strings S1: {} S2 {}", s1, s1_1);
+    let s = "This is a literal string";
+    // The following appears to violate single ownership rule but not in the case of string literals
+    let s1 = s; // ownership is not moved but the owner references the same fixed length string
+    let s2 = s; // ownership is not moved but the owner references the same fixed length string
+    println!("Ownership of literal strings s: {:p} s1 {:p} s2 {:p}", &s, s1, s2);
 }

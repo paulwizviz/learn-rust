@@ -17,7 +17,7 @@ The characteristics of `char` are:
 
 See [working examples](./src/characters.rs).
 
-## String Literals and `str` Type
+## String Literals
 
 A string literal is enclosed with `"` with the following characteristics:
 
@@ -51,7 +51,11 @@ let raw_string_with_quotes = r#"He said, "Hello, world!""#;
 println!("{}", raw_string_with_quotes);
 ```
 
-A variable of `str` type represents a type of literal string however by itself cannot be used directly because it's an unsized type. You can only use  `&str`, which is a reference to a string slice (or literals). `&str` points to some UTF-8 encoded string data, but it does not own the data. It can point to string literals or slices of `String` types.
+## `str` 
+
+This is a slice of strings. However, `str` type cannot by itself be directly annotate variables because it is an unsize type. You can only annotate with `&str`, which is a reference to a string slice (or literals). 
+
+`&str` points to some UTF-8 encoded string data, but it does not own the data. It can point to string literals or slices of `String` types.
 
 See [working example](./src/strings.rs).
 
