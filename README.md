@@ -5,8 +5,8 @@ Welcome to my collection of working examples and references to documentation, so
 ## Topics
 
 * Basic Types
-    * [Floats](./floats/doc.md)
-    * [Integers](./integers/doc.md)
+    * [Floats](./floats/src/main.rs)
+    * [Integers](./integers/src/main.rs)
     * Boolean - `bool` (`true` or `false`)
 * [Memory and variables](./memory/doc.md)
 * Project management
