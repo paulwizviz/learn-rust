@@ -31,5 +31,5 @@ name = "strings"
 version = "0.1.0"
 
 [[package]]
-name = "struts"
+name = "structs"
 version = "0.1.0"

@@ -7,6 +7,6 @@ members = [
     "memory",  
     "print", 
     "strings", 
-    "struts",
+    "structs",
     "tuples",
 ]

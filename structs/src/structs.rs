@@ -25,7 +25,8 @@ pub fn instantiate(){
     };
     println!("Pointer {0:p} {0:?}", p_ptr);
 
-    let p_created = create_person(String::from("Paul"), 57);
-    println!("From creator {:?}", p_created);
+    let p_created = create_person(String::from("Paul"), 18);
+    let fields = (&p_created.name, p_created.age);
+    println!("From creator {:?}, Fields : {:?}", p_created, fields);
 }
 

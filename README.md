@@ -9,6 +9,7 @@ Welcome to my collection of working examples and references to documentation, so
     * [Package management](./project/package.md)
     * [Toolchain](./project/tools.md)
 * [Strings](./string/doc.md)
+* Struts
 * Types
     * Floats
     * Integers
