@@ -1,13 +1,15 @@
-mod strings;
+mod str;
+mod string;
 mod characters;
 
 fn main() {
     characters::literals();
     characters::conversion();
-    strings::raw();
-    strings::ownership_raw();
-    strings::length_and_capcity();
-    strings::substring();
-    strings::string_type();
-    strings::string_ownership();
+    str::literals();
+    str::substring();
+    str::ownership();
+    string::length_and_capcity();
+    string::string_type();
+    string::ownership();
+    string::borrowing();
 }

@@ -15,7 +15,9 @@ The characteristics of `char` are:
 * **Encoding**: Since `char` represents a Unicode scalar value, it can handle a wide range of characters from different languages and symbols.
 * **Conversion**: You can convert `char` to and from other types, like `u32`, if you need the numeric representation of the character.
 
-## String Literals
+See [working examples](./src/characters.rs).
+
+## String Literals and `str` Type
 
 A string literal is enclosed with `"` with the following characteristics:
 
@@ -33,7 +35,7 @@ fn main() {
 
 `"Hello"` is stored in the read-only memory, and `s` is a reference to this string slice.
 
-The prefix `r` before a string literal is used to create a raw string literal. Raw string literals allow you to include characters in the string without needing to escape them. This is particularly useful for strings that contain many backslashes (such as regular expressions or file paths) or other characters that would normally require escaping in a regular string literal.
+The prefix `r` before a string literal is used to create a string literal. Raw string literals allow you to include characters in the string without needing to escape them. This is particularly useful for strings that contain many backslashes (such as regular expressions or file paths) or other characters that would normally require escaping in a regular string literal.
 
 In this example, we use it to represent `\` without escaping.
 
@@ -49,9 +51,9 @@ let raw_string_with_quotes = r#"He said, "Hello, world!""#;
 println!("{}", raw_string_with_quotes);
 ```
 
-## `str` Type
+A variable of `str` type represents a type of literal string however by itself cannot be used directly because it's an unsized type. You can only use  `&str`, which is a reference to a string slice (or literals). `&str` points to some UTF-8 encoded string data, but it does not own the data. It can point to string literals or slices of `String` types.
 
-`str` by itself cannot be used directly because it's an unsized type. You can only use  `&str`, which is a reference to a string slice. It points to some UTF-8 encoded string data, but it does not own the data. It can point to string literals or slices of `String` types.
+See [working example](./src/strings.rs).
 
 ## `String` (String Type)
 

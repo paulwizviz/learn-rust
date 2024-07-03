@@ -1,6 +1,6 @@
 
 pub fn literals(){
-    println!("-- character literals --");
+    println!("-- Character literals --");
     let size_of = std::mem::size_of::<char>;
     assert_eq!(4, size_of()); // four bytes
 
@@ -13,7 +13,7 @@ pub fn literals(){
 }
 
 pub fn conversion(){
-    println!("-- characters conversation --");
+    println!("-- Character conversation --");
     let c = '\u{1f600}';
     println!("Assigned character: {} size: {}", c, std::mem::size_of_val(&c));
     let u_32 : u32 = c as u32;
