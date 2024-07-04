@@ -1,5 +1,6 @@
-mod structs;
+mod declare;
 
 fn main() {
-    structs::instantiate();
+    declare::run_atomic();
+    declare::run_embedded();
 }
