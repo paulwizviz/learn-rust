@@ -1,4 +1,5 @@
 pub fn array(){
+    println!("-- Array --");
     let a = [1, 2, 3];
     println!("The elements of a are {:?}", a);
     println!("Length of array is {}", a.len());
@@ -20,7 +21,7 @@ pub fn array(){
 }
 
 pub fn slice(){
-
+    println!("-- Slice --");
     let array = [1,2,3,4];
     let slice = &array[1..2];
 
