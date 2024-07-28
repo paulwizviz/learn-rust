@@ -8,15 +8,16 @@ Welcome to my collection of working examples and references to documentation, so
     * [Float](./floats/src/main.rs)
     * [Integer](./integers/src/main.rs)
     * Boolean - `bool` (`true` or `false`)
-    * Compound
-        * [Array](./compound/src/array.rs)
-        * [Tuple](./compound/src/tuple.rs)
+* Compound
+    * [Array](./compound/src/array.rs)
+    * [Strings](./string/doc.md)
+* User Define Types
+    * [Tuples](./tuples/src/main.rs)
+    * [Struts](./structs/doc.md)
 * [Memory and variables](./memory/doc.md)
 * Project management
     * [Package management](./project/package.md)
     * [Toolchain](./project/tools.md)
-* [Strings](./string/doc.md)
-* [Struts](./structs/doc.md)
 
 ## References
 
